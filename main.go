@@ -14,8 +14,8 @@ import (
 )
 
 func main() {
-	client := textanalytics.New("https://sathish.cognitiveservices.azure.com/")
-	authorizer := autorest.NewCognitiveServicesAuthorizer("80bf268424b146ec8d844344a8ab7300")
+	client := textanalytics.New("https://.cognitiveservices.azure.com/")
+	authorizer := autorest.NewCognitiveServicesAuthorizer("")
 	client.Authorizer = authorizer
 	ctx := context.Background()
 	idToMessage := []string{"This is a very good team. They take a lot of time to deliver & sometimes the quality is also low. But the team is good.", " test", "happy", "really happy", "he is bad", "this product is not so great", "what's the problem?", "Thank you I already have a penguin"}
